@@ -281,7 +281,9 @@ connections."
 
 
 
+JSON的key如果是string必须要加引号，但是js的object不一定需要。
 
+python的dictionary的key如果是string也必须要加引号
 
 
 
