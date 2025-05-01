@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is a p element</p>
+    <p>This is also a p element.</p>
+    <p>This is also a p element.</p>
+    <button onclick="myFunction()">Tryit</button>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementsByTagName("p");
+        // var i;
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

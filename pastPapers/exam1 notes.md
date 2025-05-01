@@ -35,7 +35,7 @@ What happens when the animation is finished?
 
 ✅true: Square is red
 
-### Default Behavior:
+#### Default Behavior:
 
 - The animation does **not** persist the final state (`background-color: yellow`).
 - By default, the styles revert to the original state (`background-color: red`) after the animation ends.
@@ -192,12 +192,14 @@ connections."
     - caches use the **If-None-Match** condition header to get a new copy if the entity tag has changed
     - if the tags match, then a **304 Not Modified** is returned
 
-12. header that is used to improve cache performance
+13. header that is used to improve cache performance
 
     1. [`Age`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Age)
     2. [`Cache-Control`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control): Directives for caching mechanisms in both requests and responses.
     3. [`Clear-Site-Data`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data)
     4. [`Expires`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires): The date/time after which the response is considered stale.
+    5. `ETag`
+    6. `Last-Modified`
 
 13. The server sends the "Content-Encoding" header.
 
@@ -251,11 +253,15 @@ connections."
 
 ### DOM
 
-1. The DOM is a programming interface (TRUE)
+1. ✅ The DOM is a programming interface (TRUE)
 
 2. What is the purpose of the IFRAME element? **embed a site**
 
-3. 
+3. ✅ The DOM is language independent
+
+4. ✅ The DOM represents an HTML file as a tree
+
+5. ✅ The DOM is OS independent
 
    
 
@@ -287,7 +293,26 @@ python的dictionary的key如果是string也必须要加引号
 
 
 
+### Javascript 
 
+[JSON.stringify() will remove any functions from an object.](https://www.w3schools.com/js/tryit.asp?filename=tryjson_stringify_function)
 
+[Adding elements with high indexes can create undefined "holes" in an array.](https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_holes)
 
+Q: Select all the JavaScript statements that are syntactically correct.
 
+```
+var multipleValues = [ ];
+var multipleValues = new Array();
+var multipleValues = Array();
+var multipleValues = Array(5);
+```
+
+| **Statement**                     | **Valid?** | **Description**                                              |
+| --------------------------------- | ---------- | ------------------------------------------------------------ |
+| var multipleValues = [ ];         | ✅ Yes      | Creates an **empty array** using array literal syntax (preferred way). |
+| var multipleValues = new Array(); | ✅ Yes      | Creates an **empty array** using constructor syntax.         |
+| var multipleValues = Array();     | ✅ Yes      | Also creates an **empty array** — Array can be used as a function without new. |
+| var multipleValues = Array(5);    | ✅ Yes      | Creates an array of length 5 with **empty slots** (not filled with values). |
+
+> ⚠️ Note: Array(5) creates an array with a length of 5 but no defined elements — it’s **not the same as** [5].

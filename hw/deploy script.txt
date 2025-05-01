@@ -1,5 +1,0 @@
-gcloud run deploy flask-app \
-    --image gcr.io/csci571-hw2-451506/flask-app \
-    --platform managed \
-    --region us-central1 \
-    --allow-unauthenticated
