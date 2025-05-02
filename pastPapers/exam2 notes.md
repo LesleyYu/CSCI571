@@ -46,6 +46,8 @@
 
 The 2 most popular HTML5 video codecs: **H.264**, **VP9**
 
+
+
 ## RWD
 
 * Switching between display `x.style.display = "block";` and `x.style.display = "none";` may be used in RWD.
@@ -69,11 +71,33 @@ The 2 most popular HTML5 video codecs: **H.264**, **VP9**
 
   ❌ Uses CSS3 media queries, adaptive grids and flexible images
 
-  ✅No panning if possible, unless required by the application
+  ✅ No panning if possible, unless required by the application
 
-  ❌Easy reading with a minimum of scrolling		？？？
+  ❌ Easy reading with a minimum of scrolling		？？？
 
-  ✅Adapts to viewing environment
+  ✅ Adapts to viewing environment
+  
+* Reasons why hosting a `.mobi` website is not recommended.
+
+  ❌ It hinders search engines  (--> This is the reason for hosting a `mobile.xxx.com` website)
+
+  ✅ Requires duplication of content
+
+  ✅ Results in content synchronization issues
+
+  ❌ Will work on multiple device sizes
+  
+  ✅ Nobody is using .mobi TLDs
+  
+  ❌ Redirect take time
+
+* Reasons for not using `mobile.mycompany.com` websites
+  1. Redirects can **hinder/annoy search engines**
+  2. **Redirects** take lots of time
+  3. If you offer a mobile.website for iPhone, what about for **iPad, Android**, etc.
+  4. **Sharing a mobile.website will not work for all users** people on laptops  will end up with a site designed for a small screen
+
+
 
 ### fluid grids
 
@@ -110,6 +134,8 @@ B: minimize them
 C: not a guideline. 
 
 D: Wide desktop nav bars rarely fit on mobile. 
+
+
 
 
 
@@ -373,12 +399,12 @@ Answer: AB
 * Can say it to be Docker under the covers
 * A system that uses Linux Containers
 * **Pay only for the compute time you use**
-* **Triggered by events** or called from HTTP
+* **Triggered by events** or called from **HTTP**
 * It still **has SERVERS**, but we do not care about them
 * **Functions** are unit of deployment and scaling
 * No Machines, no Vms or containers visible in Programming Model
 * **Never pay for idle**
-* Auto-Scaling and Always Available, adapts to rate of incoming requests
+* Auto-Scaling and Always Available, **adapts to rate of incoming requests**
 
 #### Using AWS Lambda
 
@@ -621,6 +647,8 @@ XMLHttpRequest is the raw browser object that jQuery wraps into a more usable an
 
 > 其中前三个得check。多选题选择项如果是前三个的话就都选
 
+![image-20250501141115527](/Users/lesley/Documents/USC/CSCI571/pastPapers/pics/AJAX_xhr_checkcallback.png)
+
 ❌ To request CORS, with XMLHttpRequest, the client JavaScript must issue an Origin header.
 
 ### fetch() API
@@ -782,6 +810,8 @@ Objects abstracted by jQuery: **JSON**; **XMLHttpRequest**; **DOM**
 
 jQuery is not needed when DOM manipulation is not used.
 
+jQuery has fairly **complex** **ajax** support functions.
+
 Q:
 
 `$("input[value='Hot Fuzz'] ").text( "Hot Fuzz" ) ;` This is a attribute equals selector
@@ -859,6 +889,18 @@ Reason: Combining anonymizing VPN + Tor adds an extra layer of encryption and an
   ✅ Insufficient Authentication
 
   ✅ Brute Force Attacks
+
+* Which of the following are **Injection** Attacks?
+
+  ✅ Cross Site Request Forgery (CSRF)
+
+  ✅ Search Worms
+
+  ❌ Content Spoofing
+
+  ✅ SQL Injection
+
+  ❌ DDoS attack
 
 * What are true statements of "Diceware" generated passwords?
 
